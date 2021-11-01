@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+</head>
+<body class="bg-secondary">
+    <div class="container">
+        <div class="card mt-3">
+            <h4 class="card-header text-center">Personal Information</h4>
+            <div class="card-body">
+                <form class="row">
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label>First Name</label>
+                            <input type="text" placeholder="First Name & Middle Name (If)" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label>Last Name</label>
+                            <input type="text" placeholder="Last Name" class="form-control">
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="Email">Email</label>
+                        <input type="email" placeholder="abc@xyz.com" class="form-control" id="Email">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="card mt-3">
+            <h4 class="card-header text-center">Last Acadamic Details</h4>
+            <div class="card-body">
+                <form class="row">
+                    <div class="col-md-4">
+                        <div class="mb-3">
+                            <label for="Standard_level">Standard Level</label>
+                            <select class="form-select" id="standard_level">
+                                <option value="#">Choose One ..</option>
+                                <option value="X">Class X</option>
+                                <option value="XII">Class XII</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="mb-3">
+                            <label for="Board_examination">Examination Board</label>
+                            <select class="form-select" id="Board_examination">
+                                <option selected>Choose...</option>
+                                <option value="Madhyamik">Madhyamik Examination</option>
+                                <option value="Higher_Secondary">Higher Secondary Examination</option>
+                                <option value="ICSE">Indian Certificate of Secondary Education</option>
+                                <option value="ISC">Indian School Certificate</option>
+                                <option value="CBSC">Central Board of Secondary Education</option>
+                                <option value="CISCE">Council For The Indian School Certificate Examinations</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="mb-3">
+                            <label for="Percentage">Percentage %</label>
+                            <input class="form-control" type="number" id="Percentage" placeholder="Enter your Percentage">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="Admit Card">Admit Card</label>
+                            <input type="text" aria-label="Admit Card" class="form-control" id="Admit Card" placeholder="Input Admit Card Number">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="upload-admit-card">Upload Admit Card</label>
+                            <input type="file" class="form-control" id="upload-admit-card">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="Result Score">Result Score</label>
+                            <input type="number" aria-label="Result Score" class="form-control" id="Result Score">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="Upload-Marksheet">Upload Marksheet</label>
+                            <input type="file" class="form-control" id="Upload-Marksheet">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="card mt-3">
+            <h4 class="card-header text-center">Entrance Examination Details</h4>
+            <div class="card-body">
+                <form class="row">
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="Entrance-examination" >Examination</label>
+                            <select id="Entrance-examination" class="form-control">
+                                <option value="">Choose One..</option>
+                                <option value="">Polytechnic</option>
+                                <option value="">Voclet</option>
+                                <option value="">Joint Entrance Examination (JEE)</option>
+                                <option value="">Joint Entrance Examination Advance (JEE Advance)</option>
+                                <option value="">Jelet Examination</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="Enrollment/Application ID">Enrollment/Application ID</label>
+                            <input type="number" class="form-control" id="Enrollment/Application ID" placeholder="Enter your Entrollment / Application Number">
+                        </div> 
+                    </div>
+                    <div class="col-md-3">
+                        <div class="mb-3">
+                            <label for="General-Rank">General-Rank</label>
+                            <input type="number" class="form-control" id="General-Rank" placeholder="Enter your General Rank">
+                        </div> 
+                    </div>
+                    <div class="col-md-5">
+                        <label for="Quota-Rank">Category (if)</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-text">
+                                <input class="form-check-input mt-0" type="checkbox" value="">
+                            </div>
+                            <select id="Entrance-examination" class="form-control">
+                                <option value="">Choose One..</option>
+                                <option value="">Schedule Caste</option>
+                                <option value="">OBC Caste</option>
+                                <option value="">ST Caste</option>
+                            </select>
+                            <input type="number" class="form-control" id="General-Rank" placeholder="Enter your rank">
+                        </div> 
+                    </div>
+                    <div class="col-md-4">
+                        <div class="mb-3">
+                            <label for="Upload-Rank-Card">Upload Rank Card</label>
+                            <input type="file" class="form-control" id="Upload-Rank-Card">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="Index-Number">Index Number</label>
+                            <input type="number" class="form-control" id="Index-Number" placeholder="Enter your Index Number">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="Upload-Admit-Card">Upload Admit Card</label>
+                            <input type="file" class="form-control" id="Upload-Admit-Card">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="card mt-3">
+            <h4 class="card-header text-center">Applying for Acadamic</h4>
+            <div class="card-body">
+                <form class="row">
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="Degree">Degree</label>
+                            <select class="form-select" id="Degree">
+                                <option value="#">Choose One ..</option>
+                                <option value="Diploma">Diploma</option>
+                                <option value="B.Tech">B.Tech</option>
+                                <option value="M.Tech">M.Tech</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="Course">Course</label>
+                            <select class="form-select">
+                                <option value="#">Choose One ..</option>
+                                <option value="Diploma in Civil Engineering">Diploma in Civil Engineering</option>
+                                <option value="Diploma in Mechanical Engineering">Diploma in Mechanical Engineering</option>
+                                <option value="Diploma in Electrical Engineering">Diploma in Electrical Engineering</option>
+                                <option value="Diploma in Electronics Engineering">Diploma in Electronics Engineering</option>
+                                <option value="Diploma in Computer Science & Technology">Diploma in Computer Science & Technology</option>
+                            </select>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="float-end mt-3">
+            <button type="reset" class="btn btn-warning btn-lg">Reset</button>
+            <button type="submit" class="btn btn-success btn-lg ms-2">Submit</button>
+        </div>
+    </div>
+</body>
+</html>
